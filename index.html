@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>FCC - Survey Form</title>
+    </head>
+    <body>
+        <main>
+            <h1 id="title">SURVEY FORM</h1>
+            <p id="description">
+                Please fill in the form and share your thoughts
+            </p>
+            <form id="survey-form" action="" method="post">
+                <label id="name-label"
+                    >Your Name
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your name..."
+                        required
+                    />
+                </label>
+
+                <label id="email-label"
+                    >Your Email
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Your email..."
+                        required
+                    />
+                </label>
+                <label id="number-label"
+                    >Your Age
+                    <input
+                        type="number"
+                        id="number"
+                        min="13"
+                        max="120"
+                        placeholder="Age"
+                    />
+                </label>
+                <label
+                    >Current Job role
+                    <select class="current-job" id="dropdown">
+                        <option value="">Select current role</option>
+                        <option value="Student">Student</option>
+                        <option value="ft-job">Full Time Job</option>
+                        <option value="ft-learn">Full Time Learner</option>
+                        <option value="pref-no">Prefer Not to Say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+                <label
+                    >How many years of previous experience do you have?
+                    <select>
+                        <option value="">Please Select</option>
+                        <option value="0">0</option>
+                        <optoin value="1-2">1-2</optoin>
+                        <option value="3-5">3-5</option>
+                        <option value="5-10">5-10</option>
+                        <option value="10plus">10+</option>
+                    </select>
+                </label>
+                <label
+                    >What was the best part of the training your got from
+                    use?</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="radio"
+                        name="training"
+                        value="skills"
+                    />Skill Development</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="radio"
+                        name="training"
+                        value="courses"
+                    />Courses</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="radio"
+                        name="training"
+                        value="fcc-wiki"
+                    />FreeCodeCamp Wiki</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="radio"
+                        name="training"
+                        value="fcc-forum"
+                    />FreeCodeCamp Forum</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="radio"
+                        name="training"
+                        value="fcc-youtube"
+                    />FreeCodeCamp YouTube Channel</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="radio"
+                        name="training"
+                        value="other" />Other
+                    <input class="inline other" type="text"
+                /></label>
+
+                <label>Overall, were you satisfied with the Courses?</label>
+                <label
+                    ><input
+                        class="inline"
+                        type="radio"
+                        name="satisfied"
+                        value="yes"
+                    />Yes</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="radio"
+                        name="satisfied"
+                        value="no"
+                    />No</label
+                >
+                <label
+                    >What problems did you encounter?
+                    <textarea rows="5" cols="30"></textarea>
+                </label>
+                <h2>Final Thoughts</h2>
+
+                <label>Would you recommend us to a friend?</label>
+                <label
+                    ><input
+                        class="inline"
+                        type="radio"
+                        name="recommend"
+                        value="yes"
+                        checked
+                    />
+                    Yes, Definitely</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="radio"
+                        name="recommend"
+                        value="maybe1"
+                    />
+                    Maybe, if get employed somewhere</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="radio"
+                        name="recommend"
+                        value="maybe2"
+                    />
+                    Maybe, If more content is added</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="radio"
+                        name="recommend"
+                        value="no"
+                    />
+                    No, never</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="radio"
+                        name="recommend"
+                        value="ns"
+                    />
+                    Not Sure</label
+                >
+
+                <label>How did you hear about us?</label>
+                <label
+                    ><input
+                        class="inline"
+                        type="checkbox"
+                        name="reach"
+                        value="reach-email"
+                    />Email</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="checkbox"
+                        name="reach"
+                        value="reach-wom"
+                    />Word of Mouth</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="checkbox"
+                        name="reach"
+                        value="reach-sm"
+                    />Social Media</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="checkbox"
+                        name="reach"
+                        value="reach-ads"
+                    />Ads</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="checkbox"
+                        name="reach"
+                        value="reach-search"
+                    />Search</label
+                >
+
+                <label>Which platform did you use?</label>
+                <label
+                    ><input
+                        class="inline"
+                        type="checkbox"
+                        name="platform"
+                        value="platform-windows"
+                    />Windows</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="checkbox"
+                        value="platform-mac"
+                    />Mac OS</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="checkbox"
+                        name="platform"
+                        value="platform-linux"
+                    />Linux</label
+                >
+
+                <label>Did you purchase a service?</label>
+                <label
+                    ><input
+                        class="inline"
+                        type="radio"
+                        name="service"
+                        value="yes"
+                    />Yes</label
+                >
+                <label
+                    ><input
+                        class="inline"
+                        type="radio"
+                        name="service"
+                        value="no"
+                    />No</label
+                >
+
+                <label
+                    >Any comments (negative / positive)?
+                    <textarea rows="5" cols="30"></textarea>
+                </label>
+
+                <input type="submit" id="submit" value="Submit Form" />
+            </form>
+        </main>
+    </body>
+</html>
